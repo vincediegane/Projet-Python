@@ -29,7 +29,7 @@ class Myapp :
         self.CreatWid()
         #---------------------------------------------------------------------------------------
     def readfichier(self):
-        self.fichier = open ("E:\\mesprofiles.txt", "r")
+        self.fichier = open ("D:\\python\\exposé_phtyon\\git\\Projet-Python\\exposeContact\\mesprofiles.txt", "r")
         self.mscntct = self.fichier.readlines()
         self.contacts = []
         for line in self.mscntct :
@@ -38,10 +38,10 @@ class Myapp :
         self.fichier.close()
         #---------------------------------------------------------------------------------------
     def appendfichier(self):
-        self.fichier = open ("E:\\saliou\\python\\mesprofiles.txt", "a")
+        self.fichier = open ("D:\\python\\exposé_phtyon\\git\\Projet-Python\\exposeContact\\mesprofiles.txt", "a")
         #---------------------------------------------------------------------------------------
     def writefichier(self):
-        self.fichier = open("E:\\saliou\\python\\mesprofiles.txt", "w")
+        self.fichier = open("D:\\python\\exposé_phtyon\\git\\Projet-Python\\exposeContact\\mesprofiles.txt", "w")
         #---------------------------------------------------------------------------------------
     def CreatMenu(self):
         self.menubar = Menu(self.master)
@@ -304,4 +304,5 @@ if __name__ == "__main__":
     root.resizable(width = False, height = False )
     app = Myapp (root)
     root.mainloop()
+    print('nous avons utiliser git pour travailler en équipe')
 #############################-FIN DU PROGRAMME-#############################
